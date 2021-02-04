@@ -1,14 +1,19 @@
-"use sctrict";
+const numberOfFilms = prompt('Сколько фильмов вы уже посмотрели?','');
 
-// const result = confirm("Are you here?");
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
-// const answer = prompt("Dfv tcnm 18?", "");
-// console.log(typeof(answer));
+const answer1 = prompt('Один из просмотренных фильмов?',''),
+      answer2 = prompt('На сколько оцените его?',''),
+      answer3 = prompt('Один из просмотренных фильмов?',''),
+      answer4 = prompt('На сколько оцените его?','');
 
-// const answers = [];
+personalMovieDB.movies[answer1] = answer2;
+personalMovieDB.movies[answer3] = answer4;
 
-// console.log(typeof(answers));
-
-const user = "Ivan";
-
-alert(`Привет, ${user}`);
+console.log(personalMovieDB);
